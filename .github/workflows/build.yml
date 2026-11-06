@@ -1,0 +1,82 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Lets the last step put the build log and the installer back in this repository.
+permissions:
+  contents: write
+
+jobs:
+  mac:
+    # GitHub's Apple Silicon Macs are M1s, like the ones this app is for.
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Test the logic
+        run: |
+          mkdir -p "$RUNNER_TEMP/ci"
+          set -o pipefail
+          swift --version 2>&1 | tee "$RUNNER_TEMP/ci/1-swift-version.log"
+          swift test 2>&1 | tee "$RUNNER_TEMP/ci/2-test.log"
+
+      - name: Build the app
+        run: |
+          set -o pipefail
+          bash scripts/build-app.sh 2>&1 | tee "$RUNNER_TEMP/ci/3-build.log"
+
+      - name: Keep the installer
+        uses: actions/upload-artifact@v4
+        with:
+          name: TalkType-dmg
+          path: build/TalkType.dmg
+          if-no-files-found: error
+
+      - name: Publish the installer
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create latest --title "Neueste Version" --notes "Automatisch gebaut." --prerelease 2>/dev/null || true
+          gh release upload latest build/TalkType.dmg --clobber
+
+      # Costs build minutes, so it only runs on request: start it by hand, or put [selftest] in a commit.
+      - name: Fetch models for the self-test
+        if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[selftest]')
+        run: |
+          mkdir -p "$RUNNER_TEMP/models"
+          cd "$RUNNER_TEMP/models"
+          base=https://huggingface.co/ggerganov/whisper.cpp/resolve/main
+          curl -L --fail --silent --show-error -O "$base/ggml-large-v3-turbo-q5_0.bin"
+          curl -L --fail --silent --show-error -O "$base/ggml-small-q5_1.bin"
+          curl -L --fail --silent --show-error -O "$base/ggml-base-q5_1.bin"
+          curl -L --fail --silent --show-error -O https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/resolve/main/Qwen3.5-2B-Q4_K_M.gguf
+          curl -L --fail --silent --show-error -O https://huggingface.co/unsloth/Qwen3.5-4B-GGUF/resolve/main/Qwen3.5-4B-Q4_K_M.gguf
+
+      - name: Run the app's self-test on this Mac
+        if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[selftest]')
+        env:
+          TALKTYPE_MODELS: ${{ runner.temp }}/models
+        run: |
+          set -o pipefail
+          build/TalkType.app/Contents/MacOS/TalkType --selftest 2>&1 | tee "$RUNNER_TEMP/ci/4-selftest.log"
+
+      # The logs go on their own branch, where they can be read with git alone.
+      - name: Share the result
+        if: always()
+        env:
+          RESULT: ${{ job.status }}
+        run: |
+          echo "$GITHUB_SHA $RESULT" > "$RUNNER_TEMP/ci/result.txt"
+          git config user.name "TalkType build"
+          git config user.email "build@users.noreply.github.com"
+          git checkout --orphan ci-report
+          git rm -rf --cached . > /dev/null
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp "$RUNNER_TEMP"/ci/* .
+          git add -A
+          git commit -m "Build log for $GITHUB_SHA: $RESULT"
+          git push --force origin ci-report:ci-logs
