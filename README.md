@@ -8,7 +8,7 @@ Alles läuft auf dem Mac selbst: kostenlos, offline, und deine Stimme verlässt 
 1. Öffne `TalkType.dmg` und ziehe **TalkType** in den Ordner **Programme**.
 2. Öffne TalkType. macOS warnt beim ersten Mal, weil die App nicht von Apple geprüft ist. Klicke
    auf **Fertig**, gehe zu **Systemeinstellungen > Datenschutz & Sicherheit**, scrolle nach unten
-   und klicke bei TalkType auf **Trotzdem öffnen**.
+   und klicke bei TalkType auf **Dennoch öffnen**. Der Knopf steht dort etwa eine Stunde lang.
 3. In den Einstellungen von TalkType: erlaube **Mikrofon** und **Bedienungshilfen** und lade das
    Sprachmodell. Die Bedienungshilfen braucht TalkType zum Einfügen.
 
