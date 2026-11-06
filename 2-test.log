@@ -1,0 +1,98 @@
+Downloading binary artifact https://github.com/ggml-org/whisper.cpp/releases/download/b5454/whisper-b5454-xcframework.zip
+[16375/65816082] Downloading https://github.com/ggml-org/whisper.cpp/releases/download/b5454/whisper-b5454-xcframework.zip
+Downloaded https://github.com/ggml-org/whisper.cpp/releases/download/b5454/whisper-b5454-xcframework.zip (3.83s)
+Building for debugging...
+[0/13] /Users/runner/work/talktype-mac/talktype-mac/.build/arm64-apple-macosx/debug/TalkTypePackageTests.derived/runner.swift
+[0/13] Write sources
+[2/13] Write TalkType-entitlement.plist
+[2/13] Write sources
+[6/13] Copying whisper.framework
+[7/13] Write swift-version--79AA4F9932D1E87A.txt
+[9/19] Compiling TalkTypeCore Models.swift
+[10/19] Compiling TalkTypeCore Prompts.swift
+[11/19] Compiling TalkTypeCore InventedPhrases.swift
+[12/19] Compiling TalkTypeCore Keywords.swift
+[13/19] Compiling TalkTypeCore ModelDownload.swift
+[14/19] Emitting module TalkTypeCore
+[15/20] Compiling TalkTypeCore SpeechAudio.swift
+[16/34] Emitting module TalkType
+[17/36] Compiling TalkType SystemTranslator.swift
+[18/36] Compiling TalkType main.swift
+[19/36] Compiling TalkType Hotkeys.swift
+[20/36] Compiling TalkType LocalWhisper.swift
+[21/36] Compiling TalkType Overlay.swift
+[22/36] Compiling TalkType Paster.swift
+[23/36] Compiling TalkType Rewriter.swift
+[24/36] Compiling TalkType SelfTest.swift
+[25/36] Compiling TalkType Settings.swift
+[26/36] Compiling TalkType SettingsView.swift
+[27/36] Compiling TalkType AppDelegate.swift
+[28/36] Compiling TalkType Audio.swift
+[29/36] Compiling TalkType DictationController.swift
+[29/36] Write Objects.LinkFileList
+[30/36] Linking TalkType
+[31/36] Applying TalkType
+[33/36] Compiling TalkTypeCoreTests CoreTests.swift
+[34/36] Emitting module TalkTypeCoreTests
+[35/38] Emitting module TalkTypePackageTests
+[36/38] Compiling TalkTypePackageTests runner.swift
+[36/38] Write Objects.LinkFileList
+[37/38] Linking TalkTypePackageTests
+Build complete! (18.33s)
+Test Suite 'All tests' started at 2026-11-06 16:59:03.505.
+Test Suite 'TalkTypePackageTests.xctest' started at 2026-11-06 16:59:03.506.
+Test Suite 'InventedPhraseTests' started at 2026-11-06 16:59:03.506.
+Test Case '-[TalkTypeCoreTests.InventedPhraseTests testARealSentenceStays]' started.
+Test Case '-[TalkTypeCoreTests.InventedPhraseTests testARealSentenceStays]' passed (0.002 seconds).
+Test Case '-[TalkTypeCoreTests.InventedPhraseTests testClosingLines]' started.
+Test Case '-[TalkTypeCoreTests.InventedPhraseTests testClosingLines]' passed (0.002 seconds).
+Test Case '-[TalkTypeCoreTests.InventedPhraseTests testCreditsGoAnywhere]' started.
+Test Case '-[TalkTypeCoreTests.InventedPhraseTests testCreditsGoAnywhere]' passed (0.000 seconds).
+Test Case '-[TalkTypeCoreTests.InventedPhraseTests testInsideALongerSegment]' started.
+Test Case '-[TalkTypeCoreTests.InventedPhraseTests testInsideALongerSegment]' passed (0.000 seconds).
+Test Suite 'InventedPhraseTests' passed at 2026-11-06 16:59:03.510.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.004) seconds
+Test Suite 'KeywordTests' started at 2026-11-06 16:59:03.510.
+Test Case '-[TalkTypeCoreTests.KeywordTests testCommandsOnTheirOwn]' started.
+Test Case '-[TalkTypeCoreTests.KeywordTests testCommandsOnTheirOwn]' passed (0.002 seconds).
+Test Case '-[TalkTypeCoreTests.KeywordTests testOrdinarySentencesStayOrdinary]' started.
+Test Case '-[TalkTypeCoreTests.KeywordTests testOrdinarySentencesStayOrdinary]' passed (0.001 seconds).
+Test Case '-[TalkTypeCoreTests.KeywordTests testParsing]' started.
+Test Case '-[TalkTypeCoreTests.KeywordTests testParsing]' passed (0.000 seconds).
+Test Case '-[TalkTypeCoreTests.KeywordTests testTwoCommands]' started.
+Test Case '-[TalkTypeCoreTests.KeywordTests testTwoCommands]' passed (0.001 seconds).
+Test Suite 'KeywordTests' passed at 2026-11-06 16:59:03.513.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.003 (0.003) seconds
+Test Suite 'ModelTests' started at 2026-11-06 16:59:03.513.
+Test Case '-[TalkTypeCoreTests.ModelTests testBestIsSharedAndSizesShrink]' started.
+Test Case '-[TalkTypeCoreTests.ModelTests testBestIsSharedAndSizesShrink]' passed (0.000 seconds).
+Test Case '-[TalkTypeCoreTests.ModelTests testSizesReadTheGermanWay]' started.
+Test Case '-[TalkTypeCoreTests.ModelTests testSizesReadTheGermanWay]' passed (0.000 seconds).
+Test Suite 'ModelTests' passed at 2026-11-06 16:59:03.513.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.000 (0.000) seconds
+Test Suite 'PromptTests' started at 2026-11-06 16:59:03.513.
+Test Case '-[TalkTypeCoreTests.PromptTests testAccepting]' started.
+Test Case '-[TalkTypeCoreTests.PromptTests testAccepting]' passed (0.000 seconds).
+Test Case '-[TalkTypeCoreTests.PromptTests testPromptLanguages]' started.
+Test Case '-[TalkTypeCoreTests.PromptTests testPromptLanguages]' passed (0.000 seconds).
+Test Case '-[TalkTypeCoreTests.PromptTests testTidying]' started.
+Test Case '-[TalkTypeCoreTests.PromptTests testTidying]' passed (0.000 seconds).
+Test Suite 'PromptTests' passed at 2026-11-06 16:59:03.514.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+Test Suite 'SpeechAudioTests' started at 2026-11-06 16:59:03.514.
+Test Case '-[TalkTypeCoreTests.SpeechAudioTests testComposeClosesLongPauses]' started.
+Test Case '-[TalkTypeCoreTests.SpeechAudioTests testComposeClosesLongPauses]' passed (0.000 seconds).
+Test Case '-[TalkTypeCoreTests.SpeechAudioTests testComposeKeepsPaddingAndMovesPositions]' started.
+Test Case '-[TalkTypeCoreTests.SpeechAudioTests testComposeKeepsPaddingAndMovesPositions]' passed (0.000 seconds).
+Test Case '-[TalkTypeCoreTests.SpeechAudioTests testLastPause]' started.
+Test Case '-[TalkTypeCoreTests.SpeechAudioTests testLastPause]' passed (0.000 seconds).
+Test Suite 'SpeechAudioTests' passed at 2026-11-06 16:59:03.515.
+	 Executed 3 tests, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'TalkTypePackageTests.xctest' passed at 2026-11-06 16:59:03.515.
+	 Executed 16 tests, with 0 failures (0 unexpected) in 0.009 (0.009) seconds
+Test Suite 'All tests' passed at 2026-11-06 16:59:03.515.
+	 Executed 16 tests, with 0 failures (0 unexpected) in 0.009 (0.010) seconds
+◇ Test run started.
+↳ Testing Library Version: 124.4
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests passed after 0.001 seconds.

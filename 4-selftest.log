@@ -1,0 +1,274 @@
+whisper_vad_init_from_file_with_params: loading VAD model from '/Users/runner/work/talktype-mac/talktype-mac/build/TalkType.app/Contents/Resources/silero-vad.bin'
+whisper_vad_init_with_params: model type: silero-16k
+whisper_vad_init_with_params: model version: 6.2.0
+whisper_vad_init_with_params: n_encoder_layers = 4
+whisper_vad_init_with_params: encoder_in_channels[0] = 129
+whisper_vad_init_with_params: encoder_in_channels[1] = 128
+whisper_vad_init_with_params: encoder_in_channels[2] = 64
+whisper_vad_init_with_params: encoder_in_channels[3] = 64
+whisper_vad_init_with_params: encoder_out_channels[0] = 128
+whisper_vad_init_with_params: encoder_out_channels[1] = 64
+whisper_vad_init_with_params: encoder_out_channels[2] = 64
+whisper_vad_init_with_params: encoder_out_channels[3] = 128
+whisper_vad_init_with_params: lstm_input_size = 128
+whisper_vad_init_with_params: lstm_hidden_size = 128
+whisper_vad_init_with_params: final_conv_in = 128
+whisper_vad_init_with_params: final_conv_out = 1
+ggml_metal_device_init: tensor API disabled for pre-M5 and pre-A19 devices
+ggml_metal_library_init: using embedded metal library
+ggml_metal_library_compile_all: compiled 'fa_aux' library in 0.512 sec
+ggml_metal_library_compile_all: compiled 'fa_f16' library in 1.698 sec
+ggml_metal_library_compile_all: compiled 'fa_f32' library in 1.024 sec
+ggml_metal_library_compile_all: compiled 'fa_q4_0' library in 1.324 sec
+ggml_metal_library_compile_all: compiled 'fa_q4_1' library in 2.149 sec
+ggml_metal_library_compile_all: compiled 'fa_q5_0' library in 2.469 sec
+ggml_metal_library_compile_all: compiled 'fa_q5_1' library in 2.902 sec
+ggml_metal_library_compile_all: compiled 'fa_q8_0' library in 3.295 sec
+ggml_metal_library_compile_all: compiled 'fa_vec_f16' library in 5.565 sec
+ggml_metal_library_compile_all: compiled 'fa_vec_f32' library in 3.255 sec
+ggml_metal_library_compile_all: compiled 'fa_vec_q4_0' library in 5.738 sec
+ggml_metal_library_compile_all: compiled 'fa_vec_q4_1' library in 8.065 sec
+ggml_metal_library_compile_all: compiled 'fa_vec_q5_0' library in 8.080 sec
+ggml_metal_library_compile_all: compiled 'fa_vec_q5_1' library in 10.604 sec
+ggml_metal_library_compile_all: compiled 'fa_vec_q8_0' library in 10.653 sec
+ggml_metal_library_compile_all: compiled 'mul_mv' library in 12.304 sec
+ggml_metal_library_compile_all: compiled 'mul_mv_mma' library in 11.244 sec
+ggml_metal_library_compile_all: compiled 'mul_mm' library in 12.033 sec
+ggml_metal_library_compile_all: compiled 'quantize' library in 12.471 sec
+ggml_metal_library_compile_all: compiled 'softmax' library in 12.329 sec
+ggml_metal_library_compile_all: compiled 'norm' library in 12.081 sec
+ggml_metal_library_compile_all: compiled 'unary' library in 12.158 sec
+ggml_metal_library_compile_all: compiled 'binbcast' library in 12.377 sec
+ggml_metal_library_compile_all: compiled 'reduce' library in 12.382 sec
+ggml_metal_library_compile_all: compiled 'tri' library in 12.477 sec
+ggml_metal_library_compile_all: compiled 'ssm' library in 12.430 sec
+ggml_metal_library_compile_all: compiled 'wkv' library in 12.495 sec
+ggml_metal_library_compile_all: compiled 'gated_delta_net' library in 12.525 sec
+ggml_metal_library_compile_all: compiled 'solve_tri' library in 12.445 sec
+ggml_metal_library_compile_all: compiled 'rope' library in 12.491 sec
+ggml_metal_library_compile_all: compiled 'conv' library in 12.596 sec
+ggml_metal_library_compile_all: compiled 'upscale' library in 12.484 sec
+ggml_metal_library_compile_all: compiled 'argsort' library in 12.613 sec
+ggml_metal_library_compile_all: compiled 'pool' library in 12.500 sec
+ggml_metal_library_compile_all: compiled 'misc' library in 12.704 sec
+ggml_metal_library_compile_all: loaded 35 libraries from embedded data in 12.764 sec (max single = 12.704 sec)
+ggml_metal_rsets_init: creating a residency set collection (keep_alive = 180 s)
+ggml_metal_device_init: GPU name:   MTL0 (Apple Paravirtual device)
+ggml_metal_device_init: GPU family: MTLGPUFamilyApple5  (1005)
+ggml_metal_device_init: simdgroup reduction   = false
+ggml_metal_device_init: simdgroup matrix mul. = false
+ggml_metal_device_init: has unified memory    = true
+ggml_metal_device_init: has bfloat            = false
+ggml_metal_device_init: has tensor            = false
+ggml_metal_device_init: use residency sets    = true
+ggml_metal_device_init: use shared buffers    = true
+ggml_metal_device_init: recommendedMaxWorkingSetSize  = 10021.60 MB
+whisper_vad_init_with_params:          CPU total size =     0.88 MB
+whisper_vad_init_with_params: model size    =    0.88 MB
+whisper_backend_init_gpu: no GPU found
+whisper_backend_init: using BLAS backend
+whisper_vad_init_context: compute buffer (VAD)   =    1.60 MB
+whisper_vad_segments_from_samples: detecting speech timestamps in 134400 samples
+whisper_vad_detect_speech_no_reset: detecting speech in 134400 samples
+whisper_vad_detect_speech_no_reset: n_chunks: 263
+whisper_vad_detect_speech_no_reset: props size: 263
+whisper_vad_detect_speech_no_reset: chunk_len: 256 < n_window: 512
+whisper_vad_detect_speech_no_reset: vad time = 32.21 ms processing 134400 samples
+whisper_vad_segments_from_probs: detecting speech timestamps using 263 probabilities
+whisper_vad_segments_from_probs: Final speech segments after filtering: 1
+whisper_vad_segments_from_probs: VAD segment 0: start = 1.47, end = 7.65 (duration: 6.18)
+whisper_init_from_file_with_params_no_state: loading model from '/Users/runner/work/_temp/models/ggml-large-v3-turbo-q5_0.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 1
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+whisper_init_with_params_no_state: devices    = 3
+whisper_init_with_params_no_state: backends   = 3
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51866
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 1280
+whisper_model_load: n_audio_head  = 20
+whisper_model_load: n_audio_layer = 32
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 1280
+whisper_model_load: n_text_head   = 20
+whisper_model_load: n_text_layer  = 4
+whisper_model_load: n_mels        = 128
+whisper_model_load: ftype         = 8
+whisper_model_load: qntvr         = 2
+whisper_model_load: type          = 5 (large v3)
+whisper_model_load: adding 1609 extra tokens
+whisper_model_load: n_langs       = 100
+whisper_model_load:         MTL0 total size =   573.40 MB
+whisper_model_load: model size    =  573.40 MB
+whisper_backend_init_gpu: device 0: MTL0 (type: 1)
+whisper_backend_init_gpu: found GPU device 0: MTL0 (type: 1, cnt: 0)
+whisper_backend_init_gpu: using MTL0 backend
+ggml_metal_init: allocating
+ggml_metal_init: found device: Apple Paravirtual device
+ggml_metal_init: picking default device: Apple Paravirtual device
+ggml_metal_init: use fusion         = true
+ggml_metal_init: use concurrency    = true
+ggml_metal_init: use graph optimize = true
+whisper_backend_init: using BLAS backend
+whisper_init_state: kv self size  =   10.49 MB
+whisper_init_state: kv cross size =   31.46 MB
+whisper_init_state: kv pad  size  =    7.86 MB
+whisper_init_state: loading Core ML model from '/Users/runner/work/_temp/models/ggml-large-v3-turbo-encoder.mlmodelc'
+whisper_init_state: first run on a device may take a while ...
+whisper_init_state: failed to load Core ML model from '/Users/runner/work/_temp/models/ggml-large-v3-turbo-encoder.mlmodelc'
+whisper_init_state: compute buffer (conv)   =   57.50 MB
+whisper_init_state: compute buffer (encode) =   98.26 MB
+whisper_init_state: compute buffer (cross)  =   25.76 MB
+whisper_init_state: compute buffer (decode) =  158.53 MB
+whisper_vad_segments_from_samples: detecting speech timestamps in 134400 samples
+whisper_vad_detect_speech_no_reset: detecting speech in 134400 samples
+whisper_vad_detect_speech_no_reset: n_chunks: 263
+whisper_vad_detect_speech_no_reset: props size: 263
+whisper_vad_detect_speech_no_reset: chunk_len: 256 < n_window: 512
+whisper_vad_detect_speech_no_reset: vad time = 59.61 ms processing 134400 samples
+whisper_vad_segments_from_probs: detecting speech timestamps using 263 probabilities
+whisper_vad_segments_from_probs: Final speech segments after filtering: 1
+whisper_vad_segments_from_probs: VAD segment 0: start = 1.47, end = 7.65 (duration: 6.18)
+whisper_vad_segments_from_samples: detecting speech timestamps in 134400 samples
+whisper_vad_detect_speech_no_reset: detecting speech in 134400 samples
+whisper_vad_detect_speech_no_reset: n_chunks: 263
+whisper_vad_detect_speech_no_reset: props size: 263
+whisper_vad_detect_speech_no_reset: chunk_len: 256 < n_window: 512
+whisper_vad_detect_speech_no_reset: vad time = 82.53 ms processing 134400 samples
+whisper_vad_segments_from_probs: detecting speech timestamps using 263 probabilities
+whisper_vad_segments_from_probs: Final speech segments after filtering: 1
+whisper_vad_segments_from_probs: VAD segment 0: start = 1.47, end = 7.65 (duration: 6.18)
+ggml_metal_free: deallocating
+whisper_init_from_file_with_params_no_state: loading model from '/Users/runner/work/_temp/models/ggml-small-q5_1.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 1
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+whisper_init_with_params_no_state: devices    = 3
+whisper_init_with_params_no_state: backends   = 3
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51865
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 768
+whisper_model_load: n_audio_head  = 12
+whisper_model_load: n_audio_layer = 12
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 768
+whisper_model_load: n_text_head   = 12
+whisper_model_load: n_text_layer  = 12
+whisper_model_load: n_mels        = 80
+whisper_model_load: ftype         = 9
+whisper_model_load: qntvr         = 1
+whisper_model_load: type          = 3 (small)
+whisper_model_load: adding 1608 extra tokens
+whisper_model_load: n_langs       = 99
+whisper_model_load:         MTL0 total size =   189.49 MB
+whisper_model_load: model size    =  189.49 MB
+whisper_backend_init_gpu: device 0: MTL0 (type: 1)
+whisper_backend_init_gpu: found GPU device 0: MTL0 (type: 1, cnt: 0)
+whisper_backend_init_gpu: using MTL0 backend
+ggml_metal_init: allocating
+ggml_metal_init: found device: Apple Paravirtual device
+ggml_metal_init: picking default device: Apple Paravirtual device
+ggml_metal_init: use fusion         = true
+ggml_metal_init: use concurrency    = true
+ggml_metal_init: use graph optimize = true
+whisper_backend_init: using BLAS backend
+whisper_init_state: kv self size  =   18.87 MB
+whisper_init_state: kv cross size =   56.62 MB
+whisper_init_state: kv pad  size  =    4.72 MB
+whisper_init_state: loading Core ML model from '/Users/runner/work/_temp/models/ggml-small-encoder.mlmodelc'
+whisper_init_state: first run on a device may take a while ...
+whisper_init_state: failed to load Core ML model from '/Users/runner/work/_temp/models/ggml-small-encoder.mlmodelc'
+whisper_init_state: compute buffer (conv)   =   32.78 MB
+whisper_init_state: compute buffer (encode) =   58.66 MB
+whisper_init_state: compute buffer (cross)  =   15.86 MB
+whisper_init_state: compute buffer (decode) =  135.42 MB
+whisper_vad_segments_from_samples: detecting speech timestamps in 134400 samples
+whisper_vad_detect_speech_no_reset: detecting speech in 134400 samples
+whisper_vad_detect_speech_no_reset: n_chunks: 263
+whisper_vad_detect_speech_no_reset: props size: 263
+whisper_vad_detect_speech_no_reset: chunk_len: 256 < n_window: 512
+whisper_vad_detect_speech_no_reset: vad time = 132.70 ms processing 134400 samples
+whisper_vad_segments_from_probs: detecting speech timestamps using 263 probabilities
+whisper_vad_segments_from_probs: Final speech segments after filtering: 1
+whisper_vad_segments_from_probs: VAD segment 0: start = 1.47, end = 7.65 (duration: 6.18)
+whisper_vad_segments_from_samples: detecting speech timestamps in 134400 samples
+whisper_vad_detect_speech_no_reset: detecting speech in 134400 samples
+whisper_vad_detect_speech_no_reset: n_chunks: 263
+whisper_vad_detect_speech_no_reset: props size: 263
+whisper_vad_detect_speech_no_reset: chunk_len: 256 < n_window: 512
+whisper_vad_detect_speech_no_reset: vad time = 154.94 ms processing 134400 samples
+whisper_vad_segments_from_probs: detecting speech timestamps using 263 probabilities
+whisper_vad_segments_from_probs: Final speech segments after filtering: 1
+whisper_vad_segments_from_probs: VAD segment 0: start = 1.47, end = 7.65 (duration: 6.18)
+ggml_metal_free: deallocating
+whisper_init_from_file_with_params_no_state: loading model from '/Users/runner/work/_temp/models/ggml-base-q5_1.bin'
+whisper_init_with_params_no_state: use gpu    = 1
+whisper_init_with_params_no_state: flash attn = 1
+whisper_init_with_params_no_state: gpu_device = 0
+whisper_init_with_params_no_state: dtw        = 0
+whisper_init_with_params_no_state: devices    = 3
+whisper_init_with_params_no_state: backends   = 3
+whisper_model_load: loading model
+whisper_model_load: n_vocab       = 51865
+whisper_model_load: n_audio_ctx   = 1500
+whisper_model_load: n_audio_state = 512
+whisper_model_load: n_audio_head  = 8
+whisper_model_load: n_audio_layer = 6
+whisper_model_load: n_text_ctx    = 448
+whisper_model_load: n_text_state  = 512
+whisper_model_load: n_text_head   = 8
+whisper_model_load: n_text_layer  = 6
+whisper_model_load: n_mels        = 80
+whisper_model_load: ftype         = 9
+whisper_model_load: qntvr         = 1
+whisper_model_load: type          = 2 (base)
+whisper_model_load: adding 1608 extra tokens
+whisper_model_load: n_langs       = 99
+whisper_model_load:         MTL0 total size =    59.12 MB
+whisper_model_load: model size    =   59.12 MB
+whisper_backend_init_gpu: device 0: MTL0 (type: 1)
+whisper_backend_init_gpu: found GPU device 0: MTL0 (type: 1, cnt: 0)
+whisper_backend_init_gpu: using MTL0 backend
+ggml_metal_init: allocating
+ggml_metal_init: found device: Apple Paravirtual device
+ggml_metal_init: picking default device: Apple Paravirtual device
+ggml_metal_init: use fusion         = true
+ggml_metal_init: use concurrency    = true
+ggml_metal_init: use graph optimize = true
+whisper_backend_init: using BLAS backend
+whisper_init_state: kv self size  =    6.29 MB
+whisper_init_state: kv cross size =   18.87 MB
+whisper_init_state: kv pad  size  =    3.15 MB
+whisper_init_state: loading Core ML model from '/Users/runner/work/_temp/models/ggml-base-encoder.mlmodelc'
+whisper_init_state: first run on a device may take a while ...
+whisper_init_state: failed to load Core ML model from '/Users/runner/work/_temp/models/ggml-base-encoder.mlmodelc'
+whisper_init_state: compute buffer (conv)   =   21.59 MB
+whisper_init_state: compute buffer (encode) =   39.24 MB
+whisper_init_state: compute buffer (cross)  =   11.00 MB
+whisper_init_state: compute buffer (decode) =  121.79 MB
+whisper_vad_segments_from_samples: detecting speech timestamps in 134400 samples
+whisper_vad_detect_speech_no_reset: detecting speech in 134400 samples
+whisper_vad_detect_speech_no_reset: n_chunks: 263
+whisper_vad_detect_speech_no_reset: props size: 263
+whisper_vad_detect_speech_no_reset: chunk_len: 256 < n_window: 512
+whisper_vad_detect_speech_no_reset: vad time = 178.36 ms processing 134400 samples
+whisper_vad_segments_from_probs: detecting speech timestamps using 263 probabilities
+whisper_vad_segments_from_probs: Final speech segments after filtering: 1
+whisper_vad_segments_from_probs: VAD segment 0: start = 1.47, end = 7.65 (duration: 6.18)
+Clip: 8.4 s
+best round 1: 25046 ms: Dieses Sediment war nötig, um Sandbänke und Strände zu bilden, die als Lebensräume für Wildtiere dienten.
+best round 2: 11437 ms: Dieses Sediment war nötig, um Sandbänke und Strände zu bilden, die als Lebensräume für Wildtiere dienten.
+medium round 1: 7183 ms: Dieses Sediment war nötig, um Sandbänke und Schränke zu bilden, die als Lebensräume für Wildtiere dienten.
+medium round 2: 6127 ms: Dieses Sediment war nötig, um Sandbänke und Schränke zu bilden, die als Lebensräume für Wildtiere dienten.
+ultraLight round 1: 2136 ms: Dieses Sediment war nötig, um Sandbank und Strände zu bilden, die als Lebensräume für Wildtiere dienten.
+ultraLight round 2: 2434 ms: Dieses Sediment war nötig, um Sandbank und Strände zu bilden, die als Lebensräume für Wildtiere dienten.
+best language model ready in 30985 ms
+best translate: 15543 ms: I just wanted to briefly mention that we should hold the meeting on Thursday, not Wednesday, because Thomas isn't there on Wednesday and he has all the figures. We also still need to pay the invoice for 4.200 Euro.
+best condense: 13980 ms: Wir sollten das Meeting am Donnerstag statt am Mittwoch halten, da Thomas am Mittwoch nicht da ist und die Zahlen dabei hat. Zudem müssen wir die Rechnung über 4.200 Euro noch bezahlen.
+light language model ready in 23463 ms
+light translate: 9566 ms: Also, I just wanted to say that we should hold this meeting on Thursday, not on Wednesday, because Thomas isn't available on Wednesday and he has all those numbers. We also need to pay the invoice for over 4,200 Euro.
+light condense: 8437 ms: Wir sollten das Meeting am Donnerstag statt am Mittwoch abhalten, da Thomas am Mittwoch nicht da ist und die Rechnung über 4.200 Euro noch zu bezahlen ist.

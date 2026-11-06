@@ -1,0 +1,33 @@
+Building for production...
+[0/6] Write sources
+[2/6] Copying whisper.framework
+[3/6] Write swift-version--79AA4F9932D1E87A.txt
+[5/7] Compiling TalkTypeCore InventedPhrases.swift
+[6/8] Compiling TalkType AppDelegate.swift
+[6/8] Write Objects.LinkFileList
+[7/8] Linking TalkType
+Build complete! (9.39s)
+build/llama.tar.gz: OK
+1 identity imported.
+build/TalkType.app/Contents/Resources/rewriter/libggml-base.0.29.0.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libllama-server-impl.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libllama-completion-impl.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libllama-bench-impl.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libllama-perplexity-impl.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libllama.0.9.0.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libmtmd.0.9.0.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libllama-common.0.9.0.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libllama-quantize-impl.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libllama-cli-impl.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libggml.0.29.0.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/llama-server: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libggml-cpu.0.29.0.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libllama-batched-bench-impl.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libggml-metal.0.29.0.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libllama-fit-params-impl.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libggml-rpc.0.29.0.dylib: replacing existing signature
+build/TalkType.app/Contents/Resources/rewriter/libggml-blas.0.29.0.dylib: replacing existing signature
+build/TalkType.app/Contents/Frameworks/whisper.framework: replacing existing signature
+build/TalkType.app: replacing existing signature
+created: /Users/runner/work/talktype-mac/talktype-mac/build/TalkType.dmg
+Built build/TalkType.dmg
