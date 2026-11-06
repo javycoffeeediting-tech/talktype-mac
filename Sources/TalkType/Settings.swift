@@ -137,8 +137,8 @@ struct AppSettings: Codable, Equatable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         let defaults = AppSettings()
         hotkey = try values.decodeIfPresent(KeyCombo.self, forKey: .hotkey) ?? defaults.hotkey
-        translateHotkey = values.contains(.translateHotkey) ? try values.decodeIfPresent(KeyCombo.self, forKey: .translateHotkey) : defaults.translateHotkey
-        condenseHotkey = values.contains(.condenseHotkey) ? try values.decodeIfPresent(KeyCombo.self, forKey: .condenseHotkey) : defaults.condenseHotkey
+        translateHotkey = try values.contains(.translateHotkey) ? values.decodeIfPresent(KeyCombo.self, forKey: .translateHotkey) : defaults.translateHotkey
+        condenseHotkey = try values.contains(.condenseHotkey) ? values.decodeIfPresent(KeyCombo.self, forKey: .condenseHotkey) : defaults.condenseHotkey
         translateKeywords = try values.decodeIfPresent(String.self, forKey: .translateKeywords) ?? defaults.translateKeywords
         condenseKeywords = try values.decodeIfPresent(String.self, forKey: .condenseKeywords) ?? defaults.condenseKeywords
         microphone = try values.decodeIfPresent(String.self, forKey: .microphone)

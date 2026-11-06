@@ -15,7 +15,7 @@ enum Paster {
     private static var saved: [NSPasteboardItem]?
     private static var pasteNumber = 0
 
-    static var canPaste: Bool {
+    nonisolated static var canPaste: Bool {
         AXIsProcessTrusted()
     }
 

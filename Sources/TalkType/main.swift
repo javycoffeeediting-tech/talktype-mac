@@ -7,8 +7,14 @@ if let index = CommandLine.arguments.firstIndex(of: "--selftest") {
     SelfTest.run(wav: next < CommandLine.arguments.count ? CommandLine.arguments[next] : nil)
 }
 
-let application = NSApplication.shared
-let appDelegate = AppDelegate()
-application.delegate = appDelegate
-application.setActivationPolicy(.accessory)
-application.run()
+MainActor.assumeIsolated {
+    let application = NSApplication.shared
+    let appDelegate = AppDelegate()
+    application.delegate = appDelegate
+    application.setActivationPolicy(.accessory)
+
+    // The application only holds its delegate weakly.
+    withExtendedLifetime(appDelegate) {
+        application.run()
+    }
+}

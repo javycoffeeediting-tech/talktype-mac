@@ -349,7 +349,11 @@ final class DictationController {
                 current = try await rewriter.rewrite(current, rewrite: left, language: language, terms: settings.value.terms, model: model)
             }
 
-            return (useSystem ? try await SystemTranslator.translate(current) : current, nil)
+            if useSystem {
+                current = try await SystemTranslator.translate(current)
+            }
+
+            return (current, nil)
         } catch let error as RewriteError {
             Log.write("Rewrite failed: \(error.message)")
             return (text, error.message)
